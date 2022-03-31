@@ -1,0 +1,119 @@
+{
+    "Actor": {
+        "types": ["vampire", "ghoul", "hunter"],
+        "templates": {
+            "common": {
+                "header":{
+                    "player":"",
+                    "chronicle": "",
+                    "nature": "",
+                    "demeanor": "",
+                    "concept": ""
+                },
+                "attributes": {
+                    "physical": {
+                        "strength": {
+                            "value": 1,
+                            "max": 10
+                        },
+                        "dexterity": {
+                            "value": 1,
+                            "max": 10
+                        },
+                        "stamina": {
+                            "value": 1,
+                            "max": 10
+                        }
+                    },
+                    "social": {
+                        "charisma": {
+                            "value": 1,
+                            "max": 10
+                        },
+                        "manipulation": {
+                            "value": 1,
+                            "max": 10
+                        },
+                        "appearance": {
+                            "value": 1,
+                            "max": 10
+                        }
+                    },
+                    "mental": {
+                        "perception": {
+                            "value": 1,
+                            "max": 10
+                        },
+                        "intelligence": {
+                            "value": 1,
+                            "max": 10
+                        },
+                        "wits": {
+                            "value": 1,
+                            "max": 10
+                        }
+                    }
+                }
+            }
+        },
+        "vampire": {
+            "templates": ["common"],
+            "header":{
+                "clan":"",
+                "generation":"",
+                "sire": ""
+            }
+        },
+        "ghoul": {
+            "templates": ["common"],
+            "header":{
+                "clan_family":"",
+                "age":"",
+                "domitor": ""
+            }
+        },
+        "hunter": {
+            "templates": ["common"],
+            "header":{
+                "age":"",
+                "sex":"",
+                "residence": ""
+            }
+        }
+    },
+    "Item": {
+        "types": ["ranged-weapon", "item"],
+        "templates": {
+            "weapon_stats": {
+                "damage": 0,
+                "conceal": "",
+                "stake": false
+            },
+            "base":{
+                "description": "",
+                "weight": 0
+            }
+        },
+        "ranged-weapon": {
+            "templates": ["weapon_stats", "base"],
+                "weapons_stats": {
+                "range": 12,
+                "rate": 1,
+                "capacity": 1,
+                "chamber_round": false,
+                "burst": false
+            }
+        },
+        "item": {
+              "templates": ["base"],
+              "description": "",
+              "quantity": 1,
+              "weight": 0,
+              "attributes": {},
+              "groups": {}
+        }
+    }
+}
+
+
+

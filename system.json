@@ -1,0 +1,29 @@
+{
+    "name": "vampire20",
+    "title": "Vampire 20th",
+    "description": "Many details here.",
+    "author": "Joe Bloggs",
+    "scripts": [],
+    "esmodules": ["vampire20.js"],
+    "styles": [],
+    "packs": [],
+    "dependencies": [],
+    "languages": [
+        {
+            "lang": "en",
+            "name": "English",
+            "path": "lang/en.json"
+        }
+    ],
+    "socket": false,
+    "initiative": "1d20",
+    "gridDistance": 10,
+    "gridUnits": "ft",
+    "primaryTokenAttribute": "resources.health",
+    "secondaryTokenAttribute": "resources.power",
+    "url": "https://your/hosted/system/repo/",
+    "manifest": "https://your/hosted/system/repo/system.json",
+    "download": "https://your/packaged/download/archive.zip",
+    "minimumCoreVersion": "9",
+    "compatibleCoreVersion": "9.255"
+}
